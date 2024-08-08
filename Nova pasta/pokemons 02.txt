@@ -1,0 +1,17 @@
+pokemons
+iniciais formas finais:
+
+charizard-fogo-1 GEN
+blastoise-água-1 GEN
+venosaur-planta-1 GEN
+
+iniciais formas secundarias:
+
+charmeleon-fogo-1 GEN
+wartortle-água-1 GEN
+ivysaur-planta-1 Gen
+
+iniciais base:
+charmander-fogo-1 GEN
+squirtle-água-1 GEN
+bulbasaur-planta-1 GEN
