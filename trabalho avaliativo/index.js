@@ -31,6 +31,7 @@
      fahrenheit = (celsius *1.8) + 32
      console.log("em fahrenheit ficara", fahrenheit)
      
+     
 
      
      
