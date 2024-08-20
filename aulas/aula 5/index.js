@@ -79,9 +79,9 @@ let ET= não
 let hamburguer= sim  
 
 //B) imprima na tela todas as perguntas seguidas por suas respectivas respostas. Por exemplo: 
-console.log(voce Costuma usar roupas pretas?roupaspretas)
-console.log(voce acredita em ET?ET)
-console.log(voce gosta de hamburguer?hamburguer)
+//console.log(voce Costuma usar roupas pretas?roupaspretas)
+//console.log(voce acredita em ET?ET)
+//console.log(voce gosta de hamburguer?hamburguer)
 
 
 
