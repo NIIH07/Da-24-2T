@@ -22,7 +22,7 @@ const nome = 'aluna ingrid '
 console.log(nome.length) 
 
 console.log(nome.toLowerCase()) deixa a frase toda em minuscula
-console.log(nome.toUpperCase()) deixa a frase toda em maiuscula 
+console.log(nome.toUppercase()) deixa a frase toda em maiuscula 
 */
 
 //const email = "barrettoingrid3@gmail.com"
@@ -100,19 +100,19 @@ letras.splice(5,2)
 console.log(letras)
 */
 
+/*
+const numeros = [1,2,3,4,5,6]
 
-const valores= [1,2,3,4,5,6]
+console.log(numeros.length)
 
-console.log(valores.length)
+numeros.push(7)
 
-valores.push(7)
+console.log(numeros)
 
-console.log(valores)
+numeros.splice(3,2)
 
-valores.splice(3,2)
+console.log(numeros)
 
-console.log(valores)
-
-console.log(valores.length)
-
+console.log(numeros.length)
+*/
 
