@@ -22,7 +22,7 @@
 
      nosso algoritimo falhou 3 vezes, mas na ultima tentativa funcionou 
      */
-    
+    /*
      let celsius
      let fahrenheit
      
@@ -30,7 +30,8 @@
      console.log("o numero fica em celsius ",celsius)
      fahrenheit = (celsius *1.8) + 32
      console.log("em fahrenheit ficara", fahrenheit)
-     
+     */
+    
      
 
      
