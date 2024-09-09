@@ -95,6 +95,6 @@ listaDeTarefas.push(pergunta1,pergunta2,pergunta3);
 console.log(listaDeTarefas);
 let tarefaRealizada = prompt("insira o indice da tarefa que voçe ja realizou?")
 listaDeTarefas.splice(tarefaRealizada,1)
-console.log(listaDeTarefas);
+console.log(listaDeTarefas )
 */
 
