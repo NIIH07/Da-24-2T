@@ -93,7 +93,7 @@ class SistemaJogo {
     }
 }
 
-// Instância do jogo
+// pedido do jogo
 const jogo = new SistemaJogo();
 
 // Cadastra dois personagens no sistema.
