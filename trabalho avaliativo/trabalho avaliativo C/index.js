@@ -1,6 +1,6 @@
-// nomes: Ingrid e Luis 
-
+// Ingrid e Luis
 // Estruturas de Dados
+
 // Arrays vazios para entrada de dados
 const personagens = [];
 const armas = [];
@@ -59,17 +59,24 @@ function validarItens(itens) {
 // Funções para coletar dados
 
 function coletarPersonagens() {
-    const numPersonagens = parseInt(prompt("Quantos personagens você deseja adicionar?"));
+    const numPersonagens = Number(prompt("Quantos personagens você deseja adicionar?"));
     if (isNaN(numPersonagens) || numPersonagens <= 0) {
         console.log("Erro: Número de personagens inválido.");
-        return false; // Retorna false se a coleta falhar 
+        return false; // Retorna false se a coleta falhar
     }
     for (let i = 0; i < numPersonagens; i++) {
-        const nome = prompt(`Escolha um nome para o personagem ${i + 1}:\n${nomesPersonagens.join(', ')}`);
-        const vida = parseInt(prompt(`Vida do personagem ${i + 1} (1 a 20):`));
-        const ataque = parseInt(prompt(`Ataque do personagem ${i + 1} (0 ou maior):`));
-        const defesa = parseInt(prompt(`Defesa do personagem ${i + 1} (0 ou maior):`));
-        if (vida <= 0 || ataque < 0 || defesa < 0) {
+        let nome;
+        while (true) {
+            nome = prompt(`Escolha um nome para o personagem ${i + 1}:\n${nomesPersonagens.join(', ')}`);
+            if (nomesPersonagens.includes(nome)) {
+                break; // Sai do loop se o nome for válido
+            }
+            console.log(`Erro: O nome "${nome}" não é válido. Tente novamente.`);
+        }
+        const vida = Number(prompt(`Vida do personagem ${i + 1} (1 a 20):`));
+        const ataque = Number(prompt(`Ataque do personagem ${i + 1} (0 ou maior):`));
+        const defesa = Number(prompt(`Defesa do personagem ${i + 1} (0 ou maior):`));
+        if (vida < 1 || vida > 20 || ataque < 0 || defesa < 0) {
             console.log(`Erro: Valores inválidos para o personagem ${nome}.`);
             return false; // Retorna false se a coleta falhar
         }
@@ -79,15 +86,15 @@ function coletarPersonagens() {
 }
 
 function coletarArmas() {
-    const numArmas = parseInt(prompt("Quantas armas você deseja adicionar?"));
+    const numArmas = Number(prompt("Quantas armas você deseja adicionar?"));
     if (isNaN(numArmas) || numArmas <= 0) {
         console.log("Erro: Número de armas inválido.");
         return false; // Retorna false se a coleta falhar
     }
     for (let i = 0; i < numArmas; i++) {
         const tipo = prompt(`Escolha um tipo de arma para a arma ${i + 1}:\n${tiposArmas.join(', ')}`);
-        const dano = parseInt(prompt(`Dano da arma ${i + 1} (maior que 0):`));
-        const alcance = parseInt(prompt(`Alcance da arma ${i + 1} (0 ou maior):`));
+        const dano = Number(prompt(`Dano da arma ${i + 1} (maior que 0):`));
+        const alcance = Number(prompt(`Alcance da arma ${i + 1} (0 ou maior):`));
         if (dano <= 0 || alcance < 0) {
             console.log(`Erro: Valores inválidos para a arma ${tipo}.`);
             return false; // Retorna false se a coleta falhar
@@ -98,7 +105,7 @@ function coletarArmas() {
 }
 
 function coletarItens() {
-    const numItens = parseInt(prompt("Quantos itens você deseja adicionar?"));
+    const numItens = Number(prompt("Quantos itens você deseja adicionar?"));
     if (isNaN(numItens) || numItens <= 0) {
         console.log("Erro: Número de itens inválido.");
         return false; // Retorna false se a coleta falhar
@@ -128,7 +135,6 @@ if (personagensColetados && armasColetadas && itensColetados) {
 } else {
     console.log("Erro: Dados não validados devido a entradas inválidas.");
 }
-
 
 
 
